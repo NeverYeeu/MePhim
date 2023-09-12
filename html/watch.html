@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/watch.css">
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/infor.css">
+    <title>Name: Film</title>
+</head>
+<body>
+    <header>
+        <div id="column" class="column-header">
+            <a class="header-logo">
+                  <img src="/img/_motchill.png" alt="" class="header-logo_img">
+            </a>
+            <div class="header-search">
+                <input type="text" placeholder="Search: tên phim, tên tác giả,....">
+                <ion-icon class="header-icon" name="search-outline"></ion-icon>
+            </div>
+            <div class="header-form">
+                <ion-icon class="header-icon" name="log-in-outline"></ion-icon>
+                <a href="#" onclick="updateBtn()" class="header-form_login">
+                    Đăng Nhập
+                </a>
+                <ion-icon class="header-icon" name="people-outline"></ion-icon>
+                <a href="#" onclick="updateBtn()" class="header-form_login">
+                    Đăng ký
+                </a>
+                <ion-icon class="header-icon" name="bookmarks-outline"></ion-icon>
+                <a href="#" onclick="updateBtn()" class="header-form_login">
+                    Bookmark
+                </a>
+            </div>
+        </div>  
+    </header>
+    <nav>
+        <div id="column">
+            <ul class="nav-list">
+                <li><a href="#" class="nav-list_link cross">Trang chủ</a></li>
+                <li class="list_nav list_nav1">
+                    <a href="" class="nav-list_link">Thể loại</a>
+                    <div class="list_link-genre">
+                        <div class="link-genre_wrap">
+                            <a href="" class="link-genre_list">Cổ trang - thần thoại</a>
+                            <a href="" class="link-genre_list">Võ Thần - kiếm hiệp</a>
+                            <a href="" class="link-genre_list">Phiêu lưu - hành động</a>
+                            <a href="" class="link-genre_list">Tâm lý - tình cảm</a>
+                            <a href="" class="link-genre_list">Hoạt hình</a>
+                            <a href="" class="link-genre_list">Khoa học - viễn tưởng</a>
+                            <a href="" class="link-genre_list">Hình sự - Chiến tranh</a>
+                            <a href="" class="link-genre_list">Tài liệu - Khám phá</a>
+                            <a href="" class="link-genre_list">Văn hóa - tâm linh</a>
+                            <a href="" class="link-genre_list">Hài hước</a>
+                           
+                        </div>
+                    </div>
+                </li>
+                <li class="list_nav list_nav2">
+                    <a href="" class="nav-list_link ">Quốc Gia</a>
+                    <div class="list_link-genre list_link-nation">
+                        <div class="link-genre_wrap">
+                            <a href="" class="link-genre_list">Việt nam</a>
+                            <a href="" class="link-genre_list">Trung quốc</a>
+                            <a href="" class="link-genre_list">Thái Lan</a>
+                            <a href="" class="link-genre_list">Hàn quốc</a>
+                            <a href="" class="link-genre_list">Hồng kông</a>
+                            
+                        </div>
+                    </div>
+                </li>
+                <li class="list_nav list_nav3">
+                    <a href="" class="nav-list_link">Phim mới</a>
+                    <ul class="list_link-year">
+                        <div class="link-year-wrap">
+                            <li><a href="" class="link-year_number">Phim: 2023</a></li>  
+                            <li><a href="" class="link-year_number">Phim: 2022</a></li>  
+                            <li><a href="" class="link-year_number">Phim: 2021</a></li>  
+                            <li><a href="" class="link-year_number">Phim: 2020</a></li>  
+                            <li><a href="" class="link-year_number">Phim: 2019</a></li>  
+                            <li><a href="" class="link-year_number">Phim: 2018</a></li>  
+                            <li><a href="" class="link-year_number">Phim: 2017</a></li>  
+                            <li><a href="" class="link-year_number">Phim: 2016</a></li>  
+                            <li><a href="" class="link-year_number">Phim: 2015</a></li>  
+                            <li><a href="" class="link-year_number">Phim: 2014</a></li>  
+                            
+                        </div>
+                    </ul>
+
+                </li>
+                <li><a href="" class="nav-list_link">Phim Bộ</a></li>
+                <li><a href="" class="nav-list_link">Phim Lẻ</a></li>
+                <li><a href="" class="nav-list_link">Phim thuyết minh</a></li>
+                <li><a href="" class="nav-list_link">Phim chiếu rạp</a></li>
+                <li><a href="" class="nav-list_link">tv show</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div id="container">
+        <div id="column">
+            <div class="watch-link_history">
+                <div class="link_history-wrap">
+                    <div class="link_history">
+                        <a href="index.html" class="link_history-top">Home</a>
+                        <span>/</span>
+                    </div>
+                    <div class="link_history">
+                        <a href="#" class="link_history-top">Name: Film</a>
+                        <span>/</span>
+                    </div>
+                    <div class="link_history">
+                        <a href="" class="link_history-top">Name: Chapter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="watch-link_notify">
+                Lịch chiếu : <span>Hai tập mỗi tối CN- thứ 5 và một tập mỗi tối thứ sáu hàng tuần trên MêFilm.</span>
+            </div>
+
+            <video controls muted width="100%" height=" auto">
+                <source src ="/video/Cách chèn video YouTube vào HTML trong 30 giây.mp4">
+            </video>
+
+            <div class="watch-link_setting">
+                <div class="link_setting-follow">
+                    <button class="setting-follow_btn">Theo dõi</button>
+                    <p><span>29K</span>người đang theo dõi nội dung này. Hãy là người đầu tiên trong số bạn bè của bạn theo dõi nội dung này!</p>
+                </div>
+                <div class="link_setting-video">
+                    <div class="setting-video_btn">
+                        <ion-icon name="eye-off-outline"></ion-icon>
+                        Tắt quảng cáo
+                    </div>
+                    <div class="setting-video_btn">
+                        <ion-icon name="play-skip-forward-outline"></ion-icon>
+                        Tự động chuyển tập: 
+                        <span class="video_btn-skip">Bật</span>
+                    </div>
+
+                    <div class="setting-video_btn">
+                        <ion-icon name="resize-outline"></ion-icon>
+                        Full screen
+                    </div>
+                    <div class="setting-video_btn">
+                        <ion-icon name="bulb-outline"></ion-icon>
+                        Turn off:
+                        <span class="video_btn-bulb">Bật</span>
+                    </div>
+                </div>
+            </div>
+            <ul class="watch-link_chapter">
+                <li><a href="" class="link_chapter-film click-chapter">Tập 1</a></li>
+                <li><a href="" class="link_chapter-film">Tập 2</a></li>
+                <li><a href="" class="link_chapter-film">Tập 3</a></li>
+               
+            </ul>
+            <a href="" class="watch-link_header">
+                <li>Name: Film</li>
+                <li class="link_header-other">Other name</li>
+            </a>
+            <div class="watch-link_description">
+                Soi Sáng Cho Em kể về câu chuyện của mười năm trước Từ Lai bị mắc kẹt trong một trận động đất và được cứu bởi lính cứu hoả Cận Thời Xuyên cùng chú chó tìm kiếm cứu nạn Truy Phong. Để xoa dịu Từ Lai đang bị thương Cận Thời Xuyên đã hứa với cô hẹn ước mười năm. Mười năm sau Từ Lai kết thúc chương trình học ...
+                <a href="/html/infor.html">[Xem thêm]</a>
+            </div>
+            <div class="watch-like_wrap">
+                <div class="watch-link_icon">
+                    <div class="link_icon-state">
+                        <ion-icon name="thumbs-up-outline"></ion-icon>
+                        Thích <span> 09</span>
+                    </div>
+                    <div class="link_icon-state">
+                        <ion-icon name="share-social-outline"></ion-icon>
+                        Share
+                    </div>
+                </div>
+                <ul class="watch-like_rate">
+                    <li><ion-icon name="star-outline"></ion-icon></li>
+                    <li><ion-icon name="star-outline"></ion-icon></li>
+                    <li><ion-icon name="star-outline"></ion-icon></li>
+                    <li><ion-icon name="star-outline"></ion-icon></li>
+                    <li><ion-icon name="star-outline"></ion-icon></li>
+                    <li><ion-icon name="star-outline"></ion-icon></li>
+                    <li><ion-icon name="star-outline"></ion-icon></li>
+                    <li><ion-icon name="star-outline"></ion-icon></li>
+                    <li><ion-icon name="star-outline"></ion-icon></li>
+                    <li><ion-icon name="star-outline"></ion-icon></li>
+                    <li><p>(<span>9.1</span>điểm / <span>41</span> lượt )</p></li>
+                </ul>
+
+            </div>
+           
+        </div>
+        <div class="watch-wrap">  
+            <div id="column">
+                <div class="film_left-comment">
+                    <div class="left-comments_header">
+                        <div class="comments_header-number">
+                            <p>218</p> bình luận
+                        </div>
+                        <div class="comments_header-nav">
+                            <p>Sắp xếp theo</dp>
+                            <button class="header-nav_btn">
+                                Mới nhất
+                                <ion-icon name="caret-down-outline"></ion-icon>
+                            </button>
+                                <div class="header-nav_time">
+                                    <div class="nav_time-old">
+                                        <ion-icon name="checkmark-outline"></ion-icon>
+                                        Mới nhất
+                                    </div>
+                                    <div class="nav_time-old">old</div>
+                                    <ion-icon class="out-icon" name="caret-forward-outline"></ion-icon>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="left-comments_input">
+                        <img src="/img/_logo.jpg" alt="" class="comments_input-img">
+                        <div class="comments_input-wrap">
+                            <input type="text " placeholder="Viết bình luận...">
+                            <button>Đăng nhập để bình luận</button>
+                        </div>
+                    </div>
+                    <div class="left-comments_content">
+                        <div class="comments_content-user">
+                            <a href=""><img src="" alt="" class="content-user_img"></a>
+                            <div class="content-user_name">
+                                <div class="user_name-header">Hòa Trần</div>
+                                <p class="user_name-comment"> tập 10 52 phút ông chú trưởng thôn bảo cảm ơn HHHH</p>
+                                <div class="user_name-like">
+                                    <span class="name-like_user"><a href="">Thích</a></span>-
+                                    <span class="name-like_user"><a href="">Phản hồi</a></span>-
+                                    <span class="name-like_time">18 giờ trước</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <button class="left-comments_extra">Tải thêm 10 bình luận</button>
+                    <div class="left-comments_facebook">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                        <a href="">Plugin bình luận trên Facebook</a>
+                    </div>
+                </div>
+        
+                <div class="film_left-propo">
+                    <div class="left-propo_header">
+                        <ion-icon name="star-outline"></ion-icon>
+                        Có thể bạn muốn xem
+                    </div>
+                    <div class="left-propo_contain">
+                        <div class="left-propo_icon" onclick="prevSlideW()">
+                            <ion-icon class="icon-nav right-btn"  name="caret-back-outline"></ion-icon>
+                        </div>
+                        <div class="left-propo_wrap">
+    
+                            <div class="propo-film_infor">
+                                <a class="film_infor-wrap" href="">
+                                    <img src="/img/Chi-Dai-Hoc-Duong.jpg" alt="" class="film_infor-img">
+                                    <div class="film_infor-name">Chị đại học đường cũng biết yêu</div>
+                                </a>
+                                <div class="film_infor-chapter">
+                                    Tập 11 Vietsub
+                                </div>
+                            </div>
+                            <div class="propo-film_infor">
+                                <a href="">
+                                    <img src="/img/Ca-the-gioi-dang-cho-hai-nguoi-chia-tay.jpg" alt="" class="film_infor-img">
+                                    <div class="film_infor-name">Chị đại học đường</div>
+                                </a>
+                                <div class="film_infor-chapter">
+                                    Tập 11 Vietsub
+                                </div>
+                            </div>
+                            <div class="propo-film_infor">
+                                <a href="">
+                                    <img src="/img/Chi-Dai-Hoc-Duong.jpg" alt="" class="film_infor-img">
+                                    <div class="film_infor-name">Chị đại học đường</div>
+                                </a>
+                                <div class="film_infor-chapter">
+                                    Tập 11 Vietsub
+                                </div>
+                            </div>
+                            <div class="propo-film_infor">
+                                <a href="">
+                                    <img src="/img/Chi-Dai-Hoc-Duong.jpg" alt="" class="film_infor-img">
+                                    <div class="film_infor-name">Chị đại học đường</div>
+                                </a>
+                                <div class="film_infor-chapter">
+                                    Tập 11 Vietsub
+                                </div>
+                            </div>
+                            <div class="propo-film_infor">
+                                <a href="">
+                                    <img src="/img/Chi-Dai-Hoc-Duong.jpg" alt="" class="film_infor-img">
+                                    <div class="film_infor-name">Chị đại học đường</div>
+                                </a>
+                                <div class="film_infor-chapter">
+                                    Tập 11 Vietsub
+                                </div>
+                            </div>
+                            <div class="propo-film_infor">
+                                <a href="">
+                                    <img src="/img/Chi-Dai-Hoc-Duong.jpg" alt="" class="film_infor-img">
+                                    <div class="film_infor-name">Chị đại học đường</div>
+                                </a>
+                                <div class="film_infor-chapter">
+                                    Tập 11 Vietsub
+                                </div>
+                            </div>
+                            <div class="propo-film_infor">
+                                <a href="">
+                                    <img src="/img/Chi-Dai-Hoc-Duong.jpg" alt="" class="film_infor-img">
+                                    <div class="film_infor-name">Chị đại học đường</div>
+                                </a>
+                                <div class="film_infor-chapter">
+                                    Tập 11 Vietsub
+                                </div>
+                            </div>
+                            <div class="propo-film_infor">
+                                <a href="">
+                                    <img src="/img/Chi-Dai-Hoc-Duong.jpg" alt="" class="film_infor-img">
+                                    <div class="film_infor-name">Chị đại học đường</div>
+                                </a>
+                                <div class="film_infor-chapter">
+                                    Tập 11 Vietsub
+                                </div>
+                            </div>
+                            <div class="propo-film_infor">
+                                <a href="">
+                                    <img src="/img/Chi-Dai-Hoc-Duong.jpg" alt="" class="film_infor-img">
+                                    <div class="film_infor-name">Chị đại học đường</div>
+                                </a>
+                                <div class="film_infor-chapter">
+                                    Tập 11 Vietsub
+                                </div>
+                            </div>
+                            <div class="propo-film_infor">
+                                <a class="film_infor-wrap" href="">
+                                    <img src="/img/Chi-Dai-Hoc-Duong.jpg" alt="" class="film_infor-img">
+                                    <div class="film_infor-name">Chị đại học đường cũng biết yêu</div>
+                                </a>
+                                <div class="film_infor-chapter">
+                                    Tập 11 Vietsub
+                                </div>
+                            </div>
+                            <div class="propo-film_infor">
+                                <a href="">
+                                    <img src="/img/Ca-the-gioi-dang-cho-hai-nguoi-chia-tay.jpg" alt="" class="film_infor-img">
+                                    <div class="film_infor-name">Chị đại học đường</div>
+                                </a>
+                                <div class="film_infor-chapter">
+                                    Tập 11 Vietsub
+                                </div>
+                            </div>
+                            <div class="propo-film_infor">
+                                <a href="">
+                                    <img src="/img/Chi-Dai-Hoc-Duong.jpg" alt="" class="film_infor-img">
+                                    <div class="film_infor-name">Chị đại học đường</div>
+                                </a>
+                                <div class="film_infor-chapter">
+                                    Tập 11 Vietsub
+                                </div>
+                            </div>
+                            <div class="propo-film_infor">
+                                <a href="">
+                                    <img src="/img/Chi-Dai-Hoc-Duong.jpg" alt="" class="film_infor-img">
+                                    <div class="film_infor-name">Chị đại học đường</div>
+                                </a>
+                                <div class="film_infor-chapter">
+                                    Tập 11 Vietsub
+                                </div>
+                            </div>
+                            <div class="propo-film_infor">
+                                <a href="">
+                                    <img src="/img/Chi-Dai-Hoc-Duong.jpg" alt="" class="film_infor-img">
+                                    <div class="film_infor-name">Chị đại học đường</div>
+                                </a>
+                                <div class="film_infor-chapter">
+                                    Tập 11 Vietsub
+                                </div>
+                            </div>
+                            <div class="propo-film_infor">
+                                <a href="">
+                                    <img src="/img/Chi-Dai-Hoc-Duong.jpg" alt="" class="film_infor-img">
+                                    <div class="film_infor-name">Chị đại học đường</div>
+                                </a>
+                                <div class="film_infor-chapter">
+                                    Tập 11 Vietsub
+                                </div>
+                            </div>
+                            <div class="propo-film_infor">
+                                <a href="">
+                                    <img src="/img/Chi-Dai-Hoc-Duong.jpg" alt="" class="film_infor-img">
+                                    <div class="film_infor-name">Chị đại học đường</div>
+                                </a>
+                                <div class="film_infor-chapter">
+                                    Tập 11 Vietsub
+                                </div>
+                            </div>
+                            <div class="propo-film_infor">
+                                <a href="">
+                                    <img src="/img/Chi-Dai-Hoc-Duong.jpg" alt="" class="film_infor-img">
+                                    <div class="film_infor-name">Chị đại học đường</div>
+                                </a>
+                                <div class="film_infor-chapter">
+                                    Tập 11 Vietsub
+                                </div>
+                            </div>
+                            <div class="propo-film_infor">
+                                <a href="">
+                                    <img src="/img/Chi-Dai-Hoc-Duong.jpg" alt="" class="film_infor-img">
+                                    <div class="film_infor-name">Chị đại học đường</div>
+                                </a>
+                                <div class="film_infor-chapter">
+                                    Tập 11 Vietsub
+                                </div>
+                            </div>
+                            <div class="propo-film_infor">
+                                <a class="film_infor-wrap" href="">
+                                    <img src="/img/Chi-Dai-Hoc-Duong.jpg" alt="" class="film_infor-img">
+                                    <div class="film_infor-name">Chị đại học đường cũng biết yêu</div>
+                                </a>
+                                <div class="film_infor-chapter">
+                                    Tập 11 Vietsub
+                                </div>
+                            </div>
+                            <div class="propo-film_infor">
+                                <a href="">
+                                    <img src="/img/Ca-the-gioi-dang-cho-hai-nguoi-chia-tay.jpg" alt="" class="film_infor-img">
+                                    <div class="film_infor-name">Chị đại học đường</div>
+                                </a>
+                                <div class="film_infor-chapter">
+                                    Tập 11 Vietsub
+                                </div>
+                            </div>
+                            <div class="propo-film_infor">
+                                <a href="">
+                                    <img src="/img/Chi-Dai-Hoc-Duong.jpg" alt="" class="film_infor-img">
+                                    <div class="film_infor-name">Chị đại học đường</div>
+                                </a>
+                                <div class="film_infor-chapter">
+                                    Tập 11 Vietsub
+                                </div>
+                            </div>
+                            <div class="propo-film_infor">
+                                <a href="">
+                                    <img src="/img/Chi-Dai-Hoc-Duong.jpg" alt="" class="film_infor-img">
+                                    <div class="film_infor-name">Chị đại học đường</div>
+                                </a>
+                                <div class="film_infor-chapter">
+                                    Tập 11 Vietsub
+                                </div>
+                            </div>
+                            <div class="propo-film_infor">
+                                <a href="">
+                                    <img src="/img/Chi-Dai-Hoc-Duong.jpg" alt="" class="film_infor-img">
+                                    <div class="film_infor-name">Chị đại học đường</div>
+                                </a>
+                                <div class="film_infor-chapter">
+                                    Tập 11 Vietsub
+                                </div>
+                            </div>
+                            <div class="propo-film_infor">
+                                <a href="">
+                                    <img src="/img/Chi-Dai-Hoc-Duong.jpg" alt="" class="film_infor-img">
+                                    <div class="film_infor-name">Chị đại học đường</div>
+                                </a>
+                                <div class="film_infor-chapter">
+                                    Tập 11 Vietsub
+                                </div>
+                            </div>
+                            <div class="propo-film_infor">
+                                <a href="">
+                                    <img src="/img/Chi-Dai-Hoc-Duong.jpg" alt="" class="film_infor-img">
+                                    <div class="film_infor-name">Chị đại học đường</div>
+                                </a>
+                                <div class="film_infor-chapter">
+                                    Tập 11 Vietsub
+                                </div>
+                            </div>
+                            <div class="propo-film_infor">
+                                <a href="">
+                                    <img src="/img/Chi-Dai-Hoc-Duong.jpg" alt="" class="film_infor-img">
+                                    <div class="film_infor-name">Chị đại học đường</div>
+                                </a>
+                                <div class="film_infor-chapter">
+                                    Tập 11 Vietsub
+                                </div>
+                            </div>
+                            <div class="propo-film_infor">
+                                <a href="">
+                                    <img src="/img/Chi-Dai-Hoc-Duong.jpg" alt="" class="film_infor-img">
+                                    <div class="film_infor-name">Chị đại học đường</div>
+                                </a>
+                                <div class="film_infor-chapter">
+                                    Tập 11 Vietsub
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="left-propo_icon" onclick="nextSlideW()">
+                            <ion-icon class="icon-nav left-btn" name="caret-forward-outline"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contain-hot">
+                    <div class="movie-slide">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div id="column">
+            <div class="footer-wrap">
+                <div class="footer-left">
+                    <li>
+                        <a href="/html/home.html" class="footer-left_link">xem phim online</a>
+                        miễn phí chất lượng cao với phụ đề tiếng việt - thuyết minh - lồng tiếng. Name: Film có nhiều thể loại phim phong phú, đặc sắc, nhiều bộ phim hay nhất - mới nhất.
+                    </li>
+                     <li>Website motphim.net với giao diện trực quan, thuận tiện, tốc độ tải nhanh, thường xuyên cập nhật các bộ phim mới hứa hẹn sẽ đem lại những trải nghiệm tốt cho người dùng.</li>
+                </div>
+                <ul class="footer-right">
+                    <li><a class="footer-right_link" href="">Quy định</a></li>
+                    <li><a class="footer-right_link" href="">Điều khoản chung</a></li>
+                    <li><a class="footer-right_link" href="#">Trang chủ</a></li>
+                    <li><a class="footer-right_link" href="#">Giới thiệu</a></li>
+                    <li><a class="footer-right_link" href="">Chính sách riêng tư</a></li>
+                    <li><a class="footer-right_link" href="">Facebook</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/node.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
